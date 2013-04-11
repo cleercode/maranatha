@@ -54,11 +54,6 @@ body {
     padding: 5px 10px;
 }
 
-#search:focus {
-    border-color: #b58f10;
-    outline: none;
-}
-
 .translation-dropdown {
     -webkit-appearance: none;
     background: #fff url(http://i.imgur.com/yte8lBn.png) right no-repeat;
@@ -73,6 +68,11 @@ body {
     text-overflow: ellipsis;
     max-width: 300px;
     white-space: no-wrap;
+}
+
+#search:focus, .translation-dropdown:focus {
+    border-color: #b58f10;
+    outline: none;
 }
 
 .button-search {
