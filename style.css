@@ -20,7 +20,7 @@ body {
 }
 
 .max_width {
-    max-width: auto;
+    max-width: none;
 }
 
 .min_width {
@@ -200,7 +200,7 @@ body {
     margin: 2em 0 -0.5em;
 }
 
-.footnote, .footnote a {
+.chapternum, .versenum, .footnote, .footnote a {
     color: #aaa;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -225,3 +225,4 @@ body {
     color: #aaa;
     font-weight: bold;
 }
+
