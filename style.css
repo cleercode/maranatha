@@ -12,6 +12,7 @@ body {
 .button {
     background: #eee;
     border: none;
+    border-radius: 3px;
 }
 
 #body {
@@ -49,36 +50,50 @@ body {
 
 #search {
     border: 2px solid #d4a813;
-    border-radius: 0;
+    border-radius: 3px;
     margin: 0 10px 0 0;
     padding: 5px 10px;
 }
 
+#search:hover {
+    background-color: #fafafa;
+}
+
+#search:focus {
+    border-color: #b58f10;
+    outline: none;
+}
+
 .translation-dropdown {
     -webkit-appearance: none;
-    background: #fff url(http://i.imgur.com/yte8lBn.png) right no-repeat;
-    border: 2px solid #d4a813;
-    border-radius: 0;
-    font: inherit;
+    background: #d4a813 url(http://i.imgur.com/m8eTZL4.png) right no-repeat;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
     float: right;
+    font: inherit;
+    font-weight: bold;
     margin: 0;
+    max-width: 300px;
     overflow: hidden;
-    padding: 4px 29px 4px 10px;
+    padding: 6px 29px 6px 10px;
     position: relative;
     text-overflow: ellipsis;
-    max-width: 300px;
     white-space: no-wrap;
 }
 
-#search:focus, .translation-dropdown:focus {
-    border-color: #b58f10;
+.translation-dropdown:hover {
+    background-color: #b58f10;
+}
+
+.translation-dropdown:focus {
+    background-color: #b58f10;
     outline: none;
 }
 
 .button-search {
     background: #d4a813;
     border: none;
-    border-radius: 0;
     color: #fff;
     font: inherit;
     font-weight: bold;
@@ -94,7 +109,7 @@ body {
 
 #page-options-button {
     background: #ddd;
-    border-radius: 0;
+    border-radius: 3px;
     color: #fafafa;
     font-weight: bold;
     padding: 10px 15px;
@@ -104,7 +119,7 @@ body {
 
 .page-options.ui-dialog {
     border: 2px solid #ddd;
-    border-radius: 0;
+    border-radius: 0 3px 3px 3px;
     box-shadow: none;
     font-family: inherit;
     margin: 3px auto 20px;
@@ -199,7 +214,7 @@ body {
 }
 
 .result-text-style-normal {
-    font: 18px/1.8 Droid Serif, serif;
+    font: 18px/1.8 Droid Serif, Georgia, serif;
 }
 
 .result-text-style-normal h3 {
